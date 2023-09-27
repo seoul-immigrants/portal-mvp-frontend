@@ -5,3 +5,5 @@ const AppFooter = () => {
         </footer>
     )
 }
+
+export default AppFooter

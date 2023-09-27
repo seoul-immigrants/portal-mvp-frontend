@@ -1,8 +1,15 @@
+import AppHeader from "./AppHeader"
+import AppFooter from "./AppFooter"
+
 const BaseLayout = ({ children }) => {
     return (
-        <div>
-            { children }
-        </div>
+        <>
+            <AppHeader />
+            <div>
+                { children }
+            </div>
+            <AppFooter />
+        </>
     )
 }
 

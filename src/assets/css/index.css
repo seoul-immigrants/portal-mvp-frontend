@@ -7,3 +7,19 @@
 * { 
     font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
 }
+
+body {
+    background-color: #fff;
+}
+
+.app-header {
+    @apply flex justify-center h-[84px] border-b border-base-border bg-white
+}
+
+.app-header .inner {
+    @apply flex items-center justify-between max-w-[1440px] w-full h-full px-[35px]
+}
+
+/* @media screen {
+    
+} */
