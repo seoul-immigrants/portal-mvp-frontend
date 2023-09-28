@@ -5,9 +5,9 @@ const BaseLayout = ({ children }) => {
     return (
         <>
             <AppHeader />
-            <div>
+            <main className="app-main">
                 { children }
-            </div>
+            </main>
             <AppFooter />
         </>
     )

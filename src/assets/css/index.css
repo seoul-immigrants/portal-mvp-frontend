@@ -1,23 +1,82 @@
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * { 
-    font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+    font-family: inherit;
 }
 
+
 body {
+    font-family: 'Spoqa Han Sans Neo', 'Roboto', 'sans-serif'; 
+    font-size: 14px;
     background-color: #fff;
 }
 
+#root {
+    @apply flex flex-col min-h-screen
+}
+
 .app-header {
-    @apply flex justify-center h-[84px] border-b border-base-border bg-white
+    @apply flex justify-center h-[84px] border-b border-[var(--base-border)] bg-white z-50
 }
 
 .app-header .inner {
-    @apply flex items-center justify-between max-w-[1440px] w-full h-full px-[35px]
+    @apply flex items-center justify-between w-full h-full px-[35px]
+}
+
+.app-header .logo {
+    @apply h-full
+}
+
+.app-header .logo > a {
+    @apply h-full flex gap-[7px] items-center text-[16px] tracking-[0.8px]
+}
+
+.app-main {
+    @apply flex flex-1
+}
+
+.grapefruit-bg {
+    @apply bg-[var(--grapefruit)]
+}
+
+.silver-bg {
+    @apply bg-[var(--silver)] 
+}
+
+.button-form {
+    @apply flex gap-[14px]
+}
+
+.title {
+    @apply text-[24px] font-bold tracking-[1.2px] capitalize
+}
+
+.center {
+    @apply h-full flex items-center justify-center
+}
+
+.base-button {
+    @apply flex items-center gap-[12px] px-[20px] py-[12px] rounded-[5px]
+}
+
+/* 로그인 페이지 */
+.login-page {
+    @apply flex-1 flex
+}
+
+.login-page .container {
+    @apply max-w-[660px] flex flex-col justify-center p-[30px] gap-[20px]
+}
+
+.login-page .container > .form {
+    @apply flex flex-col
+}
+
+.login-page-bg {
+    background: url(../imgs/login/loginPageBG.png) no-repeat;
+    background-size: cover;
 }
 
 /* @media screen {
