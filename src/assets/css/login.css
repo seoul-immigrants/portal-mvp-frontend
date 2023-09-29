@@ -1,0 +1,32 @@
+/* 로그인 페이지 */
+.login-page {
+    @apply flex-1 flex
+}
+
+.login-page .container {
+    @apply max-w-[660px] flex flex-col justify-center p-[30px] gap-[20px]
+}
+
+.login-page .container > .form {
+    @apply flex flex-col gap-[15px]
+}
+
+.login-page-bg {
+    background: url(../imgs/login/loginPageBG2.png) no-repeat;
+    background-size: cover;
+    filter: brightness(1.2);
+}
+
+.login-page .subtitle {
+    @apply text-[16px] leading-[30px] tracking-[0.9px] font-[300]
+}
+
+.lose-password {
+    @apply text-[var(--grapefruit)] text-center
+}
+
+.kakao-login-img {
+    height: 45px;
+}
+
+/* 로그인 페이지 */

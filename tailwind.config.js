@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "base-border": "var(--base-border)"
+        
       }
     },
   },

@@ -1,4 +1,11 @@
 :root {
-    --base-border: #EAEAEA;
+    --border: #EAEAEA;
+    --background: #FAFAFA;
+    --silver: #F9F9F9;
+    --grapefruit: #F3553C;
+    --sub-silver: #808080;
+
+    --positive: #17A100;
+    --negative: #F00;
 }
 
