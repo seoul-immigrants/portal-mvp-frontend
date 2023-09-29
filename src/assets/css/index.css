@@ -106,7 +106,7 @@ body {
 
 .input input,
 .input label {
-    transition: 0.5s;
+    /* transition: 0.5s; */
 }
 
 .input input:focus + label,

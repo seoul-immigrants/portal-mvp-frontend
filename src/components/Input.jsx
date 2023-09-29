@@ -1,12 +1,17 @@
 import { useCallback, useMemo, useRef } from "react"
 
-const Input = ({ classNaem = "", type, name = null, value, placeholder, setValue, error, autoComplete }) => {
+const Input = ({ className = "", type, name = null, value, placeholder, setValue, error, autoComplete }) => {
 
     const input = useRef(null)
     const clickHandler = useCallback(() => input.current.focus(), [input])
 
+    const memorizedClassName = useMemo(() => {
+        if(className) return `input ${className}`
+        return `input`
+    }, [className])
+
     return (
-        <div className={`input ${classNaem}`}>
+        <div className={memorizedClassName}>
             <div className="input-box" onClick={clickHandler}>
                 <div className="input-content">
                     <input 

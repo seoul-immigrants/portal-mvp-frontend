@@ -12,7 +12,7 @@
 }
 
 .login-page-bg {
-    background: url(../imgs/login/loginPageBG2.png) no-repeat;
+    background: url(../imgs/login/loginPageBG3.png) no-repeat;
     background-size: cover;
     filter: brightness(1.2);
 }
@@ -22,7 +22,7 @@
 }
 
 .lose-password {
-    @apply text-[var(--grapefruit)] text-center
+    @apply text-[var(--grapefruit)] text-center py-[12px] px-[20px]
 }
 
 .kakao-login-img {
