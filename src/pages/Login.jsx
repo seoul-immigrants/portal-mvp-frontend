@@ -58,12 +58,18 @@ const Login = () => {
                                 로그인
                             </button>
                         </form>
-                        <button className="kakao-login">
-                            <img 
+                        <button className="kakao-login-button">
+                            <div className="symbol">
+                                심볼
+                            </div>
+                            <div className="label">
+                                카카오 로그인
+                            </div>
+                            {/* <img 
                                 className="kakao-login-img"
                                 src={kakaoLoginImg} 
                                 alt="카카오 로그인" 
-                            />
+                            /> */}
                         </button>
                         <Link 
                             to="#" 

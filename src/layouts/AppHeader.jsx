@@ -21,7 +21,7 @@ const AppHeader = () => {
                 <section className="button-form">
                     <Link
                         className="base-button grapefruit-bg text-white text-[12px]" 
-                        to="#"
+                        to="/register"
                     >
                         <div>
                             <img
@@ -35,7 +35,7 @@ const AppHeader = () => {
                     </Link>
                     <Link 
                         className="base-button silver-bg text-[var(--grapefruit)] text-[12px]" 
-                        to="#"
+                        to="/login"
                     >
                         로그인
                     </Link>
