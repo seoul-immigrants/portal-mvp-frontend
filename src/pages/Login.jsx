@@ -80,7 +80,7 @@ const Login = () => {
                     </div>
                 </div>
                 <div className="login-page-bg w-[60%]"></div>
-            </section>
+            </section>  
         </>
     )
 }
