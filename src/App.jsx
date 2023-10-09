@@ -5,29 +5,7 @@ import BaseLayout from './layouts/BaseLayout'
 import { useAuthStore } from './stores/auth'
 import { useEffect } from 'react'
 
-import Home from './pages/Home'
-import Login from './pages/Login'
-import Register from './pages/Register'
-
-const PrivateRoute = ({ children }) => {
-  const user = useAuthStore(state => state.user)
-
-  if(!user.isLogin) {
-    return <Navigate to="login" replace />
-  }
-
-  return children
-}
-
-const PublicRoute = ({ children }) => {
-  const user = useAuthStore(state => state.user)
-
-  if (user.isLogin) {
-    return <Navigate to="/" replace />
-  }
-
-  return children
-}
+import Router from './router'
 
 function App() {
   const { login } = useAuthStore(state => state)
@@ -53,32 +31,7 @@ function App() {
   return (
     <>
       <BaseLayout>
-        <Routes>
-          <Route 
-            path='/' 
-            element={
-              <PrivateRoute>
-                <Home />
-              </PrivateRoute>
-            } 
-          />
-          <Route 
-            path='login' 
-            element={
-              <PublicRoute>
-                <Login />
-              </PublicRoute>
-            } 
-          />
-          <Route 
-            path='register'
-            element={
-              <PublicRoute>
-                <Register />
-              </PublicRoute>
-            } 
-          />
-        </Routes>
+        <Router />
       </BaseLayout>
     </>
   )

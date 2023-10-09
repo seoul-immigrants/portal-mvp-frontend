@@ -16,7 +16,7 @@
 
 .register-page-bg,
 .login-page-bg {
-    background: url(../imgs/login/loginPageBG3.png) no-repeat;
+    background: url(../imgs/login/loginPageBG4.png) no-repeat right bottom;
     background-size: cover;
     filter: brightness(1.2);
 }
