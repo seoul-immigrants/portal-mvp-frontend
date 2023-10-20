@@ -1,0 +1,60 @@
+/* 로그인 페이지, 회원가입 페이지 */
+.register-page,
+.login-page {
+    @apply flex-1 flex
+}
+
+.register-page .container,
+.login-page .container {
+    @apply max-w-[660px] flex flex-col justify-center p-[30px] gap-[20px]
+}
+
+.register-page .container > .form,
+.login-page .container > .form {
+    @apply flex flex-col gap-[15px]
+}
+
+.register-page-bg,
+.login-page-bg {
+    background: url(../imgs/login/loginPageBG4.png) no-repeat right bottom;
+    background-size: cover;
+    filter: brightness(1.2);
+}
+
+.register-page .subtitle,
+.login-page .subtitle {
+    @apply text-[16px] leading-[30px] tracking-[0.9px] font-[300]
+}
+
+.lose-password {
+    @apply text-[var(--grapefruit)] text-center py-[12px] px-[20px]
+}
+
+.kakao-login-img {
+    height: 45px;
+}
+
+/* 로그인 페이지 */
+
+/* 카카오 로그인 */
+.kakao-login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    height: 45px;
+    border-radius: 5px;
+    padding: 0 12px;
+    background-color: #FEE500;
+    /* font-size: 14px; */
+    /* font-family: initial; */
+    font-weight: bold;
+}
+
+.kakao-login-button .symbol {
+
+}
+
+.kakao-login-button .label {
+    /* flex: 1; */
+}

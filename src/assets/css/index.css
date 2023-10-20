@@ -1,25 +1,135 @@
-@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * { 
-    font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
+    font-family: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li, ol {
+    list-style: none;
 }
 
 body {
-    background-color: #fff;
+    font-family: 'Spoqa Han Sans Neo', 'Roboto', 'sans-serif'; 
+    font-size: 14px;
+    background-color: var(--background);
+}
+
+#root {
+    @apply flex flex-col min-h-screen
 }
 
 .app-header {
-    @apply flex justify-center h-[84px] border-b border-base-border bg-white
+    @apply flex justify-center h-[84px] border-b border-[var(--border)] bg-white z-50
 }
 
 .app-header .inner {
-    @apply flex items-center justify-between max-w-[1440px] w-full h-full px-[35px]
+    @apply flex items-center justify-between w-full h-full px-[35px]
 }
 
+.app-header .logo {
+    @apply h-full
+}
+
+.app-header .logo > a {
+    @apply h-full flex gap-[7px] items-center text-[16px] tracking-[0.8px]
+}
+
+.app-main {
+    @apply flex flex-1
+}
+
+.grapefruit-bg {
+    @apply bg-[var(--grapefruit)]
+}
+
+.silver-bg {
+    @apply bg-[var(--silver)]
+}
+
+.button-form {
+    @apply flex gap-[14px]
+}
+
+.title {
+    @apply text-[24px] font-bold tracking-[1.2px] capitalize
+}
+
+.center {
+    @apply h-full flex items-center justify-center
+}
+
+.base-button {
+    @apply flex justify-center items-center gap-[12px] px-[20px] py-[12px] rounded-[5px]
+}
+
+.input {
+
+}
+
+.input input {
+    position: absolute;
+    top: calc(50% + 9px);
+    transform: translateY(-50%);
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+}
+
+.input input::placeholder {
+    opacity: 0;
+}
+
+.input .input-box {
+    position: relative;
+    height: 52px;
+    padding: 8px 15px;
+    background-color: #fff;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.input .input-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.input label {
+    position: absolute;
+    left: 15px;
+    color: var(--sub-silver);
+    font-weight: 300;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-use-select: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+.input input,
+.input label {
+    /* transition: 0.5s; */
+}
+
+.input input:focus + label,
+.input input:not(:placeholder-shown) + label {
+    top: 7px;
+    font-size: 8px;
+}
+
+/* .input input:focus,
+.input input:not(:placeholder-shown) {
+    position: absolute;
+    top: calc(50% + 4px);
+    transform: translateY(-50%);
+} */
 /* @media screen {
     
 } */
